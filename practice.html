@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <!-- Tailwinds and DaisyUI css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header></header>
+
+    <!-- Main -->
+    <main>
+        <section class="container mx-auto my-10">
+            <!-- Container -->
+            <div class="flex flex-col lg:flex-row  ">
+                <!-- Shapes -->
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-40">
+                    <!-- Parallelogram -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/parallelogram.png" alt="triangle" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Triangle</h2>
+                          <p>Area (A) = 0.5 X b X h</p>
+                          <p>
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="paralleogram-base" placeholder="Base">
+                            <span class="ml-2">cm</span>
+                            <!-- Height -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="paralleogram-height" placeholder="Height">
+                            <span  class="ml-2">cm</span>
+                          </p>
+
+                          <p>Area: <Span id="triangel-area">0</Span> cm<sup>2</sup></p>
+
+                          <div class="card-actions">
+                            <button onclick="calculateTyangleArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--area calculator  -->
+                <div class="w[400px]">
+                    <h1 class="text-4xl">Area Calculator</h1>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+    <script src="geometry.js"></script>
+</body>
+</html>
