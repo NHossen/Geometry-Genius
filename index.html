@@ -55,7 +55,7 @@
                             <input type="text" class="border text-xl w-24 px-2" name="" id="rectangle-width" placeholder="Width">
                             <span class="ml-2">cm</span>
                             <!-- length -->
-                            <input type="text" class="border text-xl w-24 px-2" name="" id="rectangle-length" placeholder="Height">
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="rectangle-length" placeholder="length">
                             <span  class="ml-2">cm</span>
                           </p>
 
@@ -63,6 +63,94 @@
                          <!-- Button -->
                           <div class="card-actions">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                     <!-- Parallelogram card -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/parallelogram.png" alt="triangle" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Parallelogram</h2>
+                          <p>Area (A) = b X h</p>
+                          <p>
+                            <!-- Width -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="parallelogram-base" placeholder="Base">
+                            <span class="ml-2">cm</span>
+                            <!-- length -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="parallelogram-height" placeholder="Height">
+                            <span  class="ml-2">cm</span>
+                          </p>
+
+                          <p>Area: <Span id="parallelogram-area">0</Span> cm<sup>2</sup></p>
+                         <!-- Button -->
+                          <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                     <!-- Rhombus card -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/rhombus.png" alt="triangle" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Rhombus</h2>
+                          <p>Area (A) =0.5 x d<sub>1</sub> X d<sub>2</sub></p>
+                          <p>
+                            <!-- Width -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="diagonal-base" placeholder="diagonal">
+                            <span class="ml-2">cm</span>
+                            <!-- length -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="diagonal-height" placeholder="diagonal">
+                            <span  class="ml-2">cm</span>
+                          </p>
+
+                          <p>Area: <Span id="rhombus-area">0</Span> cm<sup>2</sup></p>
+                         <!-- Button -->
+                          <div class="card-actions">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                     <!-- Pentagon card -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/pentagon.png" alt="triangle" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Pentagon</h2>
+                          <p>Area (A) = 0.5 x p X b</p>
+                          <p>
+                            <!-- Width -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="Pentagon-base" placeholder="p">
+                            <span class="ml-2">cm</span>
+                            <!-- length -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="Pentagon-height" placeholder="b">
+                            <span  class="ml-2">cm</span>
+                          </p>
+
+                          <p>Area: <Span id="Pentagon-area">0</Span> cm<sup>2</sup></p>
+                         <!-- Button -->
+                          <div class="card-actions">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                     <!-- Ellipse -->
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure><img src="images/ellipse.png" alt="triangle" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Ellipse</h2>
+                          <p>Area (A) = pi a X b</p>
+                          <p>
+                            <!-- Width -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="Ellipse-a" placeholder="a">
+                            <span class="ml-2">cm</span>
+                            <!-- length -->
+                            <input type="text" class="border text-xl w-24 px-2" name="" id="Ellipse-b" placeholder="b">
+                            <span  class="ml-2">cm</span>
+                          </p>
+
+                          <p>Area: <Span id="Ellipse-area">0</Span> cm<sup>2</sup></p>
+                         <!-- Button -->
+                          <div class="card-actions">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                     </div>
